@@ -1,0 +1,74 @@
+/* RESET STYLING */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+button {
+  border: none;
+  background: none;
+  font-size: 1.5em;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+body {
+  background-color: #b12625;
+}
+.about {
+  text-align: right;
+  margin: 1em;
+  font-size: 1.2em;
+  font-weight: 400;
+  color: #fff;
+  cursor: pointer;
+}
+.about:hover {
+  opacity: 0.8;
+}
+/* STOPWATCH FACE/DISPLAY */
+.stopwatch {
+  margin-top: 6em;
+}
+.stopwatch-display h1 {
+  text-align: center;
+  color: #151515;
+  font-size: 3em;
+}
+.milliseconds {
+  font-size: 0.5em;
+  vertical-align: middle;
+  margin-left: 0.4em;
+}
+
+.btns {
+  background-color: #fbdb66;
+  padding: 0.5em 1em;
+  border-radius: 25px;
+}
+.btns:hover {
+  opacity: 0.8;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 4em;
+}
+
+footer {
+  text-align: center;
+  margin-top: 15em;
+}
