@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch: AltSchool Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main id="wrapper">
+      <div class="container">
+        <header>
+          <h5 class="about">About</h5>
+        </header>
+        <div class="stopwatch">
+          <!-- Stopwatch face / display -->
+          <section class="stopwatch-display">
+            <h1>
+              <span class="hour">00</span>: <span class="minute">00</span>:<span
+                class="seconds"
+                >00</span
+              ><span class="milliseconds">00</span>
+            </h1>
+          </section>
+
+          <!-- Buttons -->
+          <section class="buttons">
+            <button class="btns btn--start">Start</button>
+            <button class="btns btn--pause">Pause</button>
+            <button class="btns btn--reset">Reset</button>
+          </section>
+        </div>
+        <footer>
+          <p>Developed by Sotunde Emmanuel, AltSchool beginner's project</p>
+        </footer>
+      </div>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
