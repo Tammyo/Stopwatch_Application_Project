@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch: AltSchool Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="dark">
+    <main id="wrapper">
+      <div class="container">
+        <!-- Light/Dark Mode Toggle -->
+        <div class="load-flash"></div>
+        <header class="mode-toggle">
+          <h6 class="label-dark">Dark</h6>
+          <div class="toggle-switch"></div>
+          <h6 class="label-light">Light</h6>
+        </header>
+        <div class="stopwatch">
+          <!-- Stopwatch face / display -->
+          <section class="stopwatch-display">
+            <h1>
+              <span class="hour">00</span>: <span class="minute">00</span>:<span
+                class="seconds"
+                >00</span
+              ><span class="milliseconds">00</span>
+            </h1>
+          </section>
+
+          <!-- Buttons -->
+          <section class="buttons">
+            <div class="top-button">
+              <!-- Start and Resume button will be changed based on the user selection
+             Start - when the user is starting a new count
+             Resume - when the usr pauses the timer -->
+              <button class="btns btn--start">Start</button>
+              <button class="btns btn--pause">Pause</button>
+            </div>
+            <div class="bottom-buttons">
+              <button class="btns btn--lap">Lap</button>
+              <button class="btns btn--reset">Reset</button>
+            </div>
+          </section>
+          <section class="lap--information">
+            <ul class="laps">
+              <!-- Laps will be appended here -->
+              <li>#1 00:00:00</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </main>
+    <script src="./toggle.js"></script>
+  </body>
+</html>
